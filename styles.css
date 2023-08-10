@@ -1,0 +1,344 @@
+/* police de base */
+@font-face {
+  font-family  : "lato-medium";
+  src          : url("./assets/Lato-Regular.woff") format("woff");
+  font-display : swap;
+}
+
+@font-face {
+  font-family  : "lato-gras";
+  src          : url("./assets/Lato-Bold.woff") format("woff");
+  font-display : swap;
+}
+
+/* couleurs */
+:root {
+  --atelier    : #4d4b00;
+  --blanc      : #EEE;
+  --coaching   : #4D3600;
+  --mentoring  : #002D4D;
+  --principal  : #4D2A00;
+  --resilience : #4D0000;
+}
+
+/* couleurs principal */
+.principal-titre { color : var(--principal); }
+
+.principal-nav-bkgnd { background : linear-gradient(180deg, #F0AE5F 0%, #FB9C28 75%, rgba(255, 150, 23, 0) 100%) }
+
+.principal-bkgnd { background : linear-gradient(180deg, #EFAE5E 0%, #FF9616 20%, #D54209 100%) no-repeat center; }
+
+.btn-principal {
+  background    : var(--principal);
+  border        : none;
+  border-radius : 1.25rem;
+  color         : var(--blanc);
+  cursor        : pointer;
+  font-family   : lato-gras, sans-serif;
+  font-size     : 1rem;
+  padding       : .5rem 2rem;
+  transition    : 0.3s;
+}
+
+.btn-principal:hover { background : var(--blanc); color : var(--principal) }
+
+/* couleurs coaching */
+.coaching-titre { color : var(--coaching); }
+
+.coaching-nav-bkgnd { background : linear-gradient(180deg, #E9CD90 0%, #DFB159 75%, rgba(220, 172, 83, 0) 100%); }
+
+.coaching-bkgnd { background : linear-gradient(180deg, #EDD8A7 0%, #DEAF55 20%, #A96C18 100%) no-repeat center; }
+
+/* couleurs mentoring */
+.mentoring-titre { color : var(--mentoring); }
+
+.mentoring-nav-bkgnd { background : linear-gradient(180deg, #C6D0DB 0%, #6B96AF 75%, rgba(107, 150, 175, 0) 100%); }
+
+.mentoring-bkgnd { background : linear-gradient(180deg, #C6D0DB 0%, #6B96AF 20%, #376271 100%) no-repeat center; }
+
+/* couleurs resilience */
+.resilience-titre { color : var(--resilience); }
+
+.resilience-nav-bkgnd { background : linear-gradient(180deg, #F0CDCC 0%, #B57D7D 75%, rgba(181, 125, 125, 0) 100%); }
+
+.resilience-bkgnd { background : linear-gradient(180deg, #F0CDCC 0%, #B57D7D 20%, #6B3D3D 100%) no-repeat center; }
+
+/* couleurs ateliers */
+.ateliers-titre { color : var(--atelier); }
+
+.atelier-nav-bkgnd { background : linear-gradient(180deg, #D5CEA8 0%, #A3A275 75%, rgba(163, 162, 117, 0) 100%); }
+
+.atelier-bkgnd { background : linear-gradient(180deg, #D5CEA8 0%, #A3A275 20%, #58572C 100%) no-repeat center; }
+
+/* typographie pour mobile */
+@media only screen and (max-width : 600px) {
+  p, a, q, cite, label {
+    font-size   : 1.3rem;
+    line-height : 1.6rem;
+  }
+
+  h1 {
+    font-size   : 2rem;
+    line-height : 2.5rem;
+  }
+
+  h2 {
+    font-size   : 1.5rem;
+    line-height : 2rem;
+  }
+}
+
+/* typographie pour PC */
+@media only screen and (min-width : 960px) {
+  p, a, q, cite, label {
+    font-size   : 1.125rem;
+    line-height : 1.5rem;
+  }
+
+  h1 { font-size : 1.5rem; }
+
+  h2 { font-size : 1.25rem; }
+}
+
+/* typographie */
+p, a, q, cite {
+  color       : var(--blanc);
+  display     : block;
+  font-family : lato-medium, sans-serif;
+  /* margin-bottom : 1.3rem; */
+}
+
+cite {
+  margin-bottom : 2rem;
+}
+
+h1 {
+  color       : var(--blanc);
+  font-family : lato-gras, sans-serif;
+  font-style  : normal;
+}
+
+h2 {
+  font-family : lato-gras, sans-serif;
+  font-style  : normal;
+  margin-top  : 3rem;
+}
+
+.david { text-decoration : none; }
+
+/* navigation */
+.menu > li > a {
+  color           : var(--blanc);
+  cursor          : pointer;
+  font-family     : lato-medium, sans-serif;
+  font-size       : 20px;
+  font-style      : normal;
+  line-height     : 24px;
+  text-decoration : none;
+}
+
+.link {
+  font-family     : lato-gras, "Arial Black", sans-serif;
+  text-decoration : underline;
+  transition      : 0.3s;
+}
+
+.link:hover { color : var(--principal); }
+
+/* formulaire et bouton */
+form { padding : 0 0 2rem; }
+
+label {
+  color       : var(--principal);
+  display     : block;
+  font-family : lato-gras, sans-serif;
+  margin-top  : 1.5rem;
+}
+
+input[type=text], input[type=email], textarea {
+  background-color : var(--blanc);
+  border           : 1px solid var(--principal);
+  border-radius    : .25rem;
+  box-sizing       : border-box;
+  color            : var(--principal);
+  display          : block;
+  font-family      : lato-medium, sans-serif;
+  font-size        : 1rem;
+  line-height      : 1.3rem;
+  margin-top       : .5rem;
+  padding          : .5rem 1rem;
+  transition       : 0.2s;
+  width            : 100%;
+}
+
+input[type=submit] { margin : 2rem 0 1rem; }
+
+input:focus, textarea:focus {
+  box-shadow : 0 0 0 2px var(--principal);
+  outline    : none;
+}
+
+textarea { height : auto; resize : vertical; }
+
+/* mise en page */
+/* réinitialisation */
+* { box-sizing : border-box; }
+
+/* element principal */
+header {
+  align-items     : center;
+  display         : flex;
+  flex-direction  : row;
+  height          : 100px;
+  justify-content : center;
+  position        : fixed;
+  width           : 100%;
+}
+
+body {
+  margin  : 0;
+  padding : 0;
+}
+
+/* manipulation du contenu */
+main {
+  max-width : 800px;
+  width     : 90%;
+}
+
+.center-content {
+  align-items     : center;
+  display         : flex;
+  flex-direction  : column;
+  height          : 100vh;
+  justify-content : space-between;
+  overflow        : scroll;
+  padding-top     : 6rem;
+}
+
+.flex {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : center;
+}
+
+.inline { display : inline; }
+
+.block { display : block; }
+
+/* manipulation du texte */
+.centre { text-align : center; }
+
+.texte-centre {
+  align-items     : center;
+  color           : var(--principal);
+  display         : grid;
+  font-family     : lato-gras, sans-serif;
+  font-size       : 1.5rem;
+  justify-content : center;
+  padding-bottom  : 25%;
+  padding-top     : 25%;
+  transition      : 0.3s;
+}
+
+.texte-centre:hover { color : var(--blanc); }
+
+/* manipulation des images */
+.images {
+  display               : grid;
+  grid-gap              : 20px;
+  grid-template-columns : 1fr 1fr;
+  grid-template-rows    : 1fr 1fr;
+  padding               : 1px;
+}
+
+.image-coaching, .image-mentoring, .image-resilience, .image-ateliers {
+  cursor   : pointer;
+  overflow : hidden;
+  position : relative;
+  z-index  : 0;
+}
+
+.image-coaching::before {
+  background      : url("./assets/coaching.jpg") no-repeat center center;
+  background-size : cover;
+  bottom          : 0;
+  content         : "";
+  left            : 0;
+  opacity         : 0.2;
+  position        : absolute;
+  right           : 0;
+  top             : 0;
+  transition      : transform 0.3s ease-out;
+  z-index         : -1;
+}
+
+.image-mentoring::before {
+  background      : url("./assets/mentoring.jpg") no-repeat center center;
+  background-size : cover;
+  bottom          : 0;
+  content         : "";
+  left            : 0;
+  opacity         : 0.2;
+  position        : absolute;
+  right           : 0;
+  top             : 0;
+  transition      : transform 0.3s ease-out;
+  z-index         : -1;
+}
+
+.image-resilience::before {
+  background      : url("./assets/resilience.jpg") no-repeat center center;
+  background-size : cover;
+  bottom          : 0;
+  content         : "";
+  left            : 0;
+  opacity         : 0.2;
+  position        : absolute;
+  right           : 0;
+  top             : 0;
+  transition      : transform 0.3s ease-out;
+  z-index         : -1;
+}
+
+.image-ateliers::before {
+  background      : url("./assets/ateliers.jpg") no-repeat center center;
+  background-size : cover;
+  bottom          : 0;
+  content         : "";
+  left            : 0;
+  opacity         : 0.2;
+  position        : absolute;
+  right           : 0;
+  top             : 0;
+  transition      : transform 0.3s ease-out;
+  z-index         : -1;
+}
+
+.image-coaching:hover::before,
+.image-mentoring:hover::before,
+.image-resilience:hover::before,
+.image-ateliers:hover::before {
+  transform : scale(1.1);
+}
+
+/* pieds de page */
+footer {
+  align-items     : center;
+  color           : var(--blanc);
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  margin-top      : 4rem;
+  width           : 100%;
+}
+
+.icon-row {
+  align-items     : center;
+  display         : flex;
+  flex-direction  : row;
+  justify-content : center;
+}
+
+.icon-row > * { margin : 0 10px; }
+
