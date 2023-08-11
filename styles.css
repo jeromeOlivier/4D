@@ -13,62 +13,58 @@
 
 /* couleurs */
 :root {
-  --atelier    : #4d4b00;
-  --blanc      : #EEE;
-  --coaching   : #4D3600;
-  --mentoring  : #002D4D;
-  --principal  : #4D2A00;
-  --resilience : #4D0000;
+  --atelier              : #4d4b00;
+  --blanc                : #EEE;
+  --coaching             : #4D3600;
+  --mentoring            : #002D4D;
+  --principal            : #4D2A00;
+  --resilience           : #4D0000;
+  --atelier-bkgnd        : linear-gradient(180deg, #D5CEA8 0%, #A3A275 20%, #4D4B00 100%);
+  --coaching-bkgnd       : linear-gradient(180deg, #EDD8A7 0%, #DEAF55 20%, #A96C18 100%);
+  --mentoring-bkgnd      : linear-gradient(180deg, #C6D0DB 0%, #6B96AF 20%, #376271 100%);
+  --principal-bkgnd      : linear-gradient(180deg, #F0AE5F 0%, #FB9C28 20%, #D54209 100%);
+  --resilience-bkgnd     : linear-gradient(180deg, #F0CDCC 0%, #B57D7D 20%, #6B3D3D 100%);
+  --atelier-nav-bkgnd    : linear-gradient(180deg, #D5CEA8 0%, #A3A275 75%, #A3A27500 100%);
+  --coaching-nav-bkgnd   : linear-gradient(180deg, #E9CD90 0%, #DFB159 75%, #DCAC5300 100%);
+  --mentoring-nav-bkgnd  : linear-gradient(180deg, #C6D0DB 0%, #6B96AF 75%, #6B96AF00 100%);
+  --principal-nav-bkgnd  : linear-gradient(180deg, #F0AE5F 0%, #FB9C28 75%, #FFB25500 100%);
+  --resilience-nav-bkgnd : linear-gradient(180deg, #F0CDCC 0%, #B57D7D 75%, #B57D7D00 100%);
 }
 
-/* couleurs principal */
+/* couleurs des titres et fond d'écrans */
 .principal-titre { color : var(--principal); }
 
-.principal-nav-bkgnd { background : linear-gradient(180deg, #F0AE5F 0%, #FB9C28 75%, rgba(255, 150, 23, 0) 100%) }
+.principal-nav-bkgnd { background : var(--principal-nav-bkgnd); }
 
-.principal-bkgnd { background : linear-gradient(180deg, #EFAE5E 0%, #FF9616 20%, #D54209 100%) no-repeat center; }
-
-.btn-principal {
-  background    : var(--principal);
-  border        : none;
-  border-radius : 1.25rem;
-  color         : var(--blanc);
-  cursor        : pointer;
-  font-family   : lato-gras, sans-serif;
-  font-size     : 1rem;
-  padding       : .5rem 2rem;
-  transition    : 0.3s;
-}
-
-.btn-principal:hover { background : var(--blanc); color : var(--principal) }
+.principal-bkgnd { background : var(--principal-bkgnd) no-repeat center; }
 
 /* couleurs coaching */
 .coaching-titre { color : var(--coaching); }
 
-.coaching-nav-bkgnd { background : linear-gradient(180deg, #E9CD90 0%, #DFB159 75%, rgba(220, 172, 83, 0) 100%); }
+.coaching-nav-bkgnd { background : var(--coaching-nav-bkgnd); }
 
-.coaching-bkgnd { background : linear-gradient(180deg, #EDD8A7 0%, #DEAF55 20%, #A96C18 100%) no-repeat center; }
+.coaching-bkgnd { background : var(--coaching-bkgnd) no-repeat center; }
 
 /* couleurs mentoring */
 .mentoring-titre { color : var(--mentoring); }
 
-.mentoring-nav-bkgnd { background : linear-gradient(180deg, #C6D0DB 0%, #6B96AF 75%, rgba(107, 150, 175, 0) 100%); }
+.mentoring-nav-bkgnd { background : var(--mentoring-nav-bkgnd); }
 
-.mentoring-bkgnd { background : linear-gradient(180deg, #C6D0DB 0%, #6B96AF 20%, #376271 100%) no-repeat center; }
+.mentoring-bkgnd { background : var(--mentoring-bkgnd) no-repeat center; }
 
 /* couleurs resilience */
 .resilience-titre { color : var(--resilience); }
 
-.resilience-nav-bkgnd { background : linear-gradient(180deg, #F0CDCC 0%, #B57D7D 75%, rgba(181, 125, 125, 0) 100%); }
+.resilience-nav-bkgnd { background : var(--resilience-nav-bkgnd); }
 
-.resilience-bkgnd { background : linear-gradient(180deg, #F0CDCC 0%, #B57D7D 20%, #6B3D3D 100%) no-repeat center; }
+.resilience-bkgnd { background : var(--resilience-bkgnd) no-repeat center; }
 
 /* couleurs ateliers */
 .ateliers-titre { color : var(--atelier); }
 
-.atelier-nav-bkgnd { background : linear-gradient(180deg, #D5CEA8 0%, #A3A275 75%, rgba(163, 162, 117, 0) 100%); }
+.atelier-nav-bkgnd { background : var(--atelier-nav-bkgnd); }
 
-.atelier-bkgnd { background : linear-gradient(180deg, #D5CEA8 0%, #A3A275 20%, #58572C 100%) no-repeat center; }
+.atelier-bkgnd { background : var(--atelier-bkgnd) no-repeat center; }
 
 /* typographie pour mobile */
 @media only screen and (max-width : 600px) {
@@ -78,8 +74,10 @@
   }
 
   h1 {
-    font-size   : 2rem;
-    line-height : 2.5rem;
+    position: relative;
+    font-size : 1.5rem;
+    margin    : 0;
+    z-index: 5;
   }
 
   h2 {
@@ -102,10 +100,10 @@
 
 /* typographie */
 p, a, q, cite {
-  color       : var(--blanc);
-  display     : block;
-  font-family : lato-medium, sans-serif;
-  /* margin-bottom : 1.3rem; */
+  color         : var(--blanc);
+  display       : block;
+  font-family   : lato-medium, sans-serif;
+  margin-bottom : 1.3rem;
 }
 
 cite {
@@ -114,38 +112,148 @@ cite {
 
 h1 {
   color       : var(--blanc);
-  font-family : lato-gras, sans-serif;
+  font-family : lato-medium, Arial, sans-serif;
   font-style  : normal;
 }
 
 h2 {
-  font-family : lato-gras, sans-serif;
+  font-family : lato-medium, Arial, sans-serif;
   font-style  : normal;
-  margin-top  : 3rem;
+  margin      : 3rem 0 1rem;
 }
 
-.david { text-decoration : none; }
+.centre { text-align : center; }
 
-/* navigation */
-.menu > li > a {
-  color           : var(--blanc);
-  cursor          : pointer;
-  font-family     : lato-medium, sans-serif;
-  font-size       : 20px;
-  font-style      : normal;
-  line-height     : 24px;
-  text-decoration : none;
+/* styles pour les liens */
+.texte-centre {
+  align-items     : center;
+  color           : var(--principal);
+  display         : grid;
+  font-family     : lato-medium, Arial, sans-serif;
+  font-size       : 1.5rem;
+  justify-content : center;
+  padding-bottom  : 25%;
+  padding-top     : 25%;
+  transition      : 0.3s;
 }
 
-.link {
-  font-family     : lato-gras, "Arial Black", sans-serif;
+.texte-centre:hover { color : var(--blanc); }
+
+.lien {
+  font-family     : lato-medium, Arial, sans-serif;
   text-decoration : underline;
   transition      : 0.3s;
 }
 
-.link:hover { color : var(--principal); }
+.lien:hover { color : var(--principal); }
 
-/* formulaire et bouton */
+.david { text-decoration : none; }
+
+/* navigation */
+nav {
+  align-items     : center;
+  background      : var(--principal-bkgnd);
+  display         : flex;
+  height          : 100vh;
+  justify-content : center;
+  left            : 0;
+  overflow        : hidden;
+  position        : absolute;
+  text-align      : center;
+  top             : 0;
+  width           : 100vw;
+  z-index         : 4;
+}
+
+.navbar {
+  align-items     : start;
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-between;
+  margin: 0 1rem;
+  max-width       : 800px;
+  width           : 100%;
+}
+
+.logo {
+  z-index : 5;
+  position: relative;
+  left: 0;
+}
+
+.menu {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : space-between;
+  list-style      : none;
+  margin          : 0;
+  padding         : 0;
+}
+
+.menu > li > a {
+  color           : var(--blanc);
+  cursor          : pointer;
+  font-family     : lato-medium, sans-serif;
+  font-size       : 1.5rem;
+  font-style      : normal;
+  line-height     : 2rem;
+  text-decoration : none;
+}
+
+.hamburger {
+  position: relative;
+  bottom: 12px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.hamburger-line {
+  background-color: var(--blanc);
+  display: block;
+  position: relative;
+  height: 4px;
+  width: 36px;
+  border-radius: 2px;
+}
+
+.hamburger-line::before,
+.hamburger-line::after{
+  background: var(--blanc);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.hamburger-line::before{
+  top: 12px;
+  border-radius: 2px;
+}
+.hamburger-line::after{
+  top: -12px;
+  border-radius: 2px;
+}
+
+/* important: aucun checkbox apparaitra! */
+input[type=checkbox] { display: none; }
+
+/* bouton */
+.btn-principal {
+  background    : var(--principal);
+  border        : none;
+  border-radius : 1.25rem;
+  color         : var(--blanc);
+  cursor        : pointer;
+  font-family   : lato-gras, sans-serif;
+  font-size     : 1rem;
+  padding       : .5rem 2rem;
+  transition    : 0.3s;
+}
+
+.btn-principal:hover { background : var(--blanc); color : var(--principal) }
+
+/* formulaire */
 form { padding : 0 0 2rem; }
 
 label {
@@ -182,17 +290,24 @@ textarea { height : auto; resize : vertical; }
 
 /* mise en page */
 /* réinitialisation */
-* { box-sizing : border-box; }
+* {
+  box-sizing : border-box;
+  margin     : 0;
+  padding    : 0;
+}
 
 /* element principal */
 header {
-  align-items     : center;
   display         : flex;
   flex-direction  : row;
-  height          : 100px;
+  height          : 180px;
   justify-content : center;
+  padding     : 20px 0 0;
+  margin: 0;
   position        : fixed;
+  top             : 0;
   width           : 100%;
+  z-index         : 1;
 }
 
 body {
@@ -206,15 +321,31 @@ main {
   width     : 90%;
 }
 
-.center-content {
+.contenu-general {
+  align-items        : center;
+  display            : flex;
+  flex-direction     : column;
+  height             : 100vh;
+  justify-content    : space-between;
+  overflow           : scroll;
+  -ms-overflow-style : none; /* IE & Edge */
+  padding-top        : 7rem;
+  scrollbar-width    : none; /* Firefox */
+}
+
+.contenu-general::-webkit-scrollbar {
+  display : none;
+}
+
+.centrer {
   align-items     : center;
   display         : flex;
   flex-direction  : column;
-  height          : 100vh;
+  height          : 106px;
   justify-content : space-between;
-  overflow        : scroll;
-  padding-top     : 6rem;
 }
+
+.cinquante { width : 50%; }
 
 .flex {
   display         : flex;
@@ -226,27 +357,10 @@ main {
 
 .block { display : block; }
 
-/* manipulation du texte */
-.centre { text-align : center; }
-
-.texte-centre {
-  align-items     : center;
-  color           : var(--principal);
-  display         : grid;
-  font-family     : lato-gras, sans-serif;
-  font-size       : 1.5rem;
-  justify-content : center;
-  padding-bottom  : 25%;
-  padding-top     : 25%;
-  transition      : 0.3s;
-}
-
-.texte-centre:hover { color : var(--blanc); }
-
 /* manipulation des images */
 .images {
   display               : grid;
-  grid-gap              : 20px;
+  grid-gap              : 2%;
   grid-template-columns : 1fr 1fr;
   grid-template-rows    : 1fr 1fr;
   padding               : 1px;

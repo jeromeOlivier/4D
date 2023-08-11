@@ -11,7 +11,7 @@
     <meta name="googlebot" content="index, follow">
     <meta name="description" content="4 Development">
     <meta name="keywords"
-          content="coaching, mentoring, resilience, ateliers, développement, développement personnel, développement professionnel, développement d'équipe, développement d'entreprise, développement d'organisation, développement d'association, développement d'ecosystème, développement d'ecosysteme, développement d'ecosysteme humain, développement d'ecosystème humain, développement d'ecosysteme professionnel, développement d'ecosystème professionnel, développement d'ecosysteme personnel, développement d'ecosystème personnel, développement d'ecosysteme d'entreprise, développement d'ecosystème d'entreprise, développement d'ecosysteme d'organisation, développement d'ecosystème d'organisation, développement d'ecosysteme d'association, développement d'ecosystème d'association">
+          content="coaching, mentoring, resilience, ateliers, développement, développement personnel, développement professionnel, développement d'équipe, développement d'entreprise, développement d'organisation, développement d'association, développement d'écosystèmes">
     <meta name="author" content="David Furrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- tags média sociaux -->
@@ -35,15 +35,37 @@
   </head>
   <body>
     <div class="principal-bkgnd">
-      <div class="center-content">
-        <header>
-          <!--        <h1>Accueil</h1>-->
-        </header>
+      <header class="principal-nav-bkgnd">
+        <div class="navbar">
+          <div class="cinquante logo">
+            <a href="index.html"><img src="./assets/4D_logo.png" alt="logo 4 Development"></a>
+          </div>
+          <div class="cinquante centrer">
+            <h1>Accueil</h1>
+            <div>
+              <input type="checkbox" id="side-menu"/>
+              <label for="side-menu" class="hamburger"><span class="hamburger-line"></span></label>
+              <nav>
+                <ul class="menu">
+<!--                  <li><a href="index.html">Accueil</a></li>-->
+                  <li><a href="propos.html">A propos</a></li>
+                  <li><a href="coaching.html">Coaching</a></li>
+                  <li><a href="mentoring.html">Mentoring</a></li>
+                  <li><a href="resilience.html">Résilience</a></li>
+                  <li><a href="ateliers.html">Ateliers</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="contenu-general">
         <main>
           <h2 class="principal-titre centre">S’affranchir du passé, vivre le présent, construire le futur.</h2>
           <div class="images">
             <a class="image-coaching"><span class="texte-centre">Coaching</span></a>
-            <a class="image-mentoring"><span class="texte-centre block">Mentoring</span></a>
+            <a class="image-mentoring"><span class="texte-centre">Mentoring</span></a>
             <a class="image-resilience"><span class="texte-centre">Resilience</span></a>
             <a class="image-ateliers"><span class="texte-centre">Ateliers</span></a>
           </div>
@@ -88,12 +110,13 @@
                    alt="instagram">
             </a>
           </div>
-          <p>&copy; <span id="year"></span> <a class="inline david" href="mailto:david@4development.ch">David Furrer</a></p>
+          <p>&copy; <span id="year"></span> <a class="inline david" href="mailto:david@4development.ch">David Furrer</a>
+          </p>
         </footer>
       </div>
     </div>
   </body>
   <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear().toString();
+    document.getElementById('year').innerHTML = new Date().getFullYear().toString();
   </script>
 </html>
