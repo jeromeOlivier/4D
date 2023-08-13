@@ -35,14 +35,38 @@
     <title>4 Development</title>
   </head>
   <body>
-    <div class="principal-bkgnd">
+    <div class="main-background">
+      <header class="main-nav-background">
+        <div class="navbar">
+          <img class="logo" srcset="./assets/4D_logo@2x.png 2x, ./assets/4D_logo.png 1x"
+               src="./assets/4D_logo.png"
+               alt="logo 4 Development">
+          <div id="menu-toggle">
+            <div class="h1-nav-container">
+              <h1>A propos</h1>
+              <div id="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+              </div>
+              <nav class="nav-links">
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="propos.html">A propos</a></li>
+                  <li><a href="coaching.html">Coaching</a></li>
+                  <li><a href="mentoring.html">Mentoring</a></li>
+                  <li><a href="resilience.html">Résilience</a></li>
+                  <li><a href="ateliers.html">Ateliers</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
       <div class="contenu-general">
-        <header>
-          <a href="index.html"><img class="logo" src="./assets/4D_logo.png" alt="logo 4 Development"></a>
-          <h1>Propos</h1>
-        </header>
         <main>
-          <h2 class="principal-titre">Qui suis-je</h2>
+          <h2 class="main-title">Qui suis-je</h2>
           <p>Issu d’un cursus universitaire HEC, j’ai commencé ma carrière comme consultant spécialisé dans
             l’accompagnement au changement et le contrôle de gestion.</p>
           <p>Puis, pendant plus de 20 ans, j’ai été cadre dans une grande entreprise où j’ai pratiqué la gestion
@@ -51,23 +75,23 @@
           <p>J’ai aussi eu l’occasion de fonder une entreprise et d’aider à la mise en œuvre de plusieurs autres.</p>
           <p>Toutes ces compétences me servent aujourd’hui dans l’accompagnement des entreprises, des managers et des
             individus.</p>
-          <h2 class="principal-titre">Mon art de vivre</h2>
+          <h2 class="main-title">Mon art de vivre</h2>
           <p>La joie dans la simplicité</p>
           <p>L’accueil du moment présent</p>
           <p>La pleine conscience de ce qui est</p>
-          <h2 class="principal-titre">Ma raison d’être</h2>
+          <h2 class="main-title">Ma raison d’être</h2>
           <p>Ma raison d'être est d'aider les gens à évoluer dans leur développement personnel et leur chemin
             professionnel. Doté d'une écoute active et bienveillante, j'utilise des outils puissants pour emmener les
             humains vers une transformation profonde.</p>
           <p>Sans forcer les choses et dans le but de nourrir votre sentiment de bien-être je vous amène à identifier,
             toucher et vivre vos moments de plénitude, qu’ils soient personnels ou professionnels.</p>
-          <h2 class="principal-titre">Ce que je peux vous apporter</h2>
+          <h2 class="main-title">Ce que je peux vous apporter</h2>
           <p>Compréhension de l’humain</p>
           <p>Compétence de manager</p>
           <p>Expérience d’entrepreneur</p>
           <p>Pratique de consultant</p>
           <p>Capacité à accompagner</p>
-          <h2 class="principal-titre">Ce que je peux vous apporter</h2>
+          <h2 class="main-title">Ce que je peux vous apporter</h2>
           <p>Références professionnelles</p>
           <p>Coach professionnel, diplômé IDC, je vous propose un coaching de qualité grâce à des outils
             expérimentés.</p>
@@ -116,12 +140,10 @@
                    alt="instagram">
             </a>
           </div>
-          <p>&copy; <span id="year"></span> <a class="inline" href="mailto:david@4development.ch">David Furrer</a></p>
+          <p>&copy; <span id="year"></span> <a class="inline david" href="mailto:david@4development.ch">David Furrer</a></p>
         </footer>
       </div>
     </div>
+    <script src="./scripts.js" defer></script>
   </body>
-  <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear().toString();
-  </script>
 </html>

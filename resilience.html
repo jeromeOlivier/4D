@@ -35,13 +35,38 @@
     <title>4 Development</title>
   </head>
   <body>
-    <div class="resilience-bkgnd">
+    <div class="resilience-background">
+      <header class="resilience-nav-background">
+        <div class="navbar">
+          <img class="logo" srcset="./assets/4D_logo@2x.png 2x, ./assets/4D_logo.png 1x"
+               src="./assets/4D_logo.png"
+               alt="logo 4 Development">
+          <div id="menu-toggle">
+            <div class="h1-nav-container">
+              <h1>Résilience</h1>
+              <div id="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+              </div>
+              <nav class="nav-links">
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="propos.html">A propos</a></li>
+                  <li><a href="coaching.html">Coaching</a></li>
+                  <li><a href="mentoring.html">Mentoring</a></li>
+                  <li><a href="resilience.html">Résilience</a></li>
+                  <li><a href="ateliers.html">Ateliers</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
       <div class="contenu-general">
-        <header>
-          <!--                  <h1>Résilience</h1>-->
-        </header>
         <main>
-          <h2 class="resilience-titre">Qu’est-ce que l’Ethnorésilience</h2>
+          <h2 class="resilience-title">Qu’est-ce que l’Ethnorésilience</h2>
           <p>Formé en Ethnorésilience par Maurice Hefti, je vous propose une approche douce pour aller revisiter votre
             passé, identifier et nommer une problématique, puis trouver petit à petit des solutions pour la
             traverser.</p>
@@ -52,7 +77,7 @@
           <p>Ethno fait référence à l’environnement qui nous entoure, à notre ADN, à ce qui nous a été transmis.</p>
           <p>Résilience fait référence au lâcher prise, à l’acceptation de ce qui est, sans ressentiment.</p>
           <a href="https://ethnoresilience.com" class="lien">https://ethnoresilience.com</a>
-          <h2 class="resilience-titre">Comment ça se passe</h2>
+          <h2 class="resilience-title">Comment ça se passe</h2>
           <p>Le point de départ de l’Ethnorésilience est toujours appuyé par une sensation qui part des cinq sens ou
             d’émotions qui permettent de dévoiler des états d’âme anciens tels que la tristesse, la peur, la colère.</p>
           <p>Par l’introspection et la découverte d’une « matière » représentant la difficulté qui s’opposent au flux
@@ -87,12 +112,10 @@
                    alt="instagram">
             </a>
           </div>
-          <p>&copy; <span id="year"></span> <a class="inline" href="mailto:david@4development.ch">David Furrer</a></p>
+          <p>&copy; <span id="year"></span> <a class="inline david" href="mailto:david@4development.ch">David Furrer</a></p>
         </footer>
       </div>
     </div>
+    <script src="./scripts.js" defer></script>
   </body>
-  <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear().toString();
-  </script>
 </html>

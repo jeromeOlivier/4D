@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="content-language" content="fr-CH">
     <link rel="preload" href="./assets/Lato-Regular.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="./assets/Lato-Bold.woff" as="font" type="font/woff" crossorigin>
     <link rel="stylesheet" title="default" href="./styles.css">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -34,20 +33,23 @@
     <title>4 Development</title>
   </head>
   <body>
-    <div class="principal-bkgnd">
-      <header class="principal-nav-bkgnd">
+    <div class="main-background">
+      <header class="main-nav-background">
         <div class="navbar">
-          <div class="cinquante logo">
-            <a href="index.html"><img src="./assets/4D_logo.png" alt="logo 4 Development"></a>
-          </div>
-          <div class="cinquante centrer">
-            <h1>Accueil</h1>
-            <div>
-              <input type="checkbox" id="side-menu"/>
-              <label for="side-menu" class="hamburger"><span class="hamburger-line"></span></label>
-              <nav>
-                <ul class="menu">
-<!--                  <li><a href="index.html">Accueil</a></li>-->
+          <img class="logo" srcset="./assets/4D_logo@2x.png 2x, ./assets/4D_logo.png 1x"
+               src="./assets/4D_logo.png"
+               alt="logo 4 Development">
+          <div id="menu-toggle">
+            <div class="h1-nav-container">
+              <h1>Accueil</h1>
+              <div id="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+              </div>
+              <nav class="nav-links">
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
                   <li><a href="propos.html">A propos</a></li>
                   <li><a href="coaching.html">Coaching</a></li>
                   <li><a href="mentoring.html">Mentoring</a></li>
@@ -62,12 +64,12 @@
       </header>
       <div class="contenu-general">
         <main>
-          <h2 class="principal-titre centre">S’affranchir du passé, vivre le présent, construire le futur.</h2>
+          <h2 class="main-title centre">S’affranchir du passé, vivre le présent, construire le futur.</h2>
           <div class="images">
-            <a class="image-coaching"><span class="texte-centre">Coaching</span></a>
-            <a class="image-mentoring"><span class="texte-centre">Mentoring</span></a>
-            <a class="image-resilience"><span class="texte-centre">Resilience</span></a>
-            <a class="image-ateliers"><span class="texte-centre">Ateliers</span></a>
+            <div class="image-coaching"><span class="texte-centre">Coaching</span></div>
+            <div class="image-mentoring"><span class="texte-centre">Mentoring</span></div>
+            <div class="image-resilience"><span class="texte-centre">Resilience</span></div>
+            <div class="image-ateliers"><span class="texte-centre">Ateliers</span></div>
           </div>
           <p>Vous traversez une période compliquée, vous faites face à des difficultés professionnelles, votre projet
             n’avance plus …</p>
@@ -79,7 +81,7 @@
             forces en mouvement.</p>
           <p>Vous pourrez débloquer des situations et évoluer vers un monde professionnel ou personnel qui vous
             correspond.</p>
-          <h2 class="principal-titre">Le cheminement</h2>
+          <h2 class="main-title">Le cheminement</h2>
           <p>On commencera par l’exploration. Elle permet de découvrir les ressources que nous avons en nous.</p>
           <p>Parfois, l’utilisation de notre passé permettra le renforcement de la confiance et l’identification d’une
             capacité déjà connue.</p>
@@ -110,13 +112,11 @@
                    alt="instagram">
             </a>
           </div>
-          <p>&copy; <span id="year"></span> <a class="inline david" href="mailto:david@4development.ch">David Furrer</a>
+        <p>&copy; <span id="year"></span> <a class="inline david" href="mailto:david@4development.ch">David Furrer</a>
           </p>
         </footer>
       </div>
     </div>
+    <script src="./scripts.js" defer></script>
   </body>
-  <script>
-    document.getElementById('year').innerHTML = new Date().getFullYear().toString();
-  </script>
 </html>

@@ -35,19 +35,44 @@
     <title>4 Development</title>
   </head>
   <body>
-    <div class="mentoring-bkgnd">
+    <div class="mentor-background">
+      <header class="mentor-nav-background">
+        <div class="navbar">
+          <img class="logo" srcset="./assets/4D_logo@2x.png 2x, ./assets/4D_logo.png 1x"
+               src="./assets/4D_logo.png"
+               alt="logo 4 Development">
+          <div id="menu-toggle">
+            <div class="h1-nav-container">
+              <h1>Mentoring</h1>
+              <div id="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+              </div>
+              <nav class="nav-links">
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="propos.html">A propos</a></li>
+                  <li><a href="coaching.html">Coaching</a></li>
+                  <li><a href="mentoring.html">Mentoring</a></li>
+                  <li><a href="resilience.html">Résilience</a></li>
+                  <li><a href="ateliers.html">Ateliers</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
       <div class="contenu-general">
-        <header>
-          <!--                  <h1>Mentoring</h1>-->
-        </header>
         <main>
-          <h2 class="mentoring-titre">Le mentoring c’est …</h2>
+          <h2 class="mentor-title">Le mentoring c’est …</h2>
           <p>Le mentoring est un processus d’accompagnement qui permet à la personne mentorée de se développer
             professionnellement et personnellement en recevant des conseils, des astuces et une perspective plus large
             basée sur l'expérience d’un mentor.</p>
           <p>Le mentor est un modèle, un conseiller et un soutien pour le mentoré qui bénéficie de son expertise et de
             sa vision du monde pour s’orienter dans sa propre carrière.</p>
-          <h2 class="mentoring-titre">Comment ça fonctionne</h2>
+          <h2 class="mentor-title">Comment ça fonctionne</h2>
           <p>Le mentoring se concentre sur le développement personnel et professionnel à long terme.</p>
           <p>A travers des rencontres de 1h à 2h, le mentor conduit le mentoré vers l’atteinte de ses objectifs à l’aide
             de différents outils, de conseils et de partages d’expérience.</p>
@@ -81,12 +106,10 @@
                    alt="instagram">
             </a>
           </div>
-          <p>&copy; <span id="year"></span> <a class="inline" href="mailto:david@4development.ch">David Furrer</a></p>
+          <p>&copy; <span id="year"></span> <a class="inline david" href="mailto:david@4development.ch">David Furrer</a></p>
         </footer>
       </div>
     </div>
+    <script src="./scripts.js" defer></script>
   </body>
-  <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear().toString();
-  </script>
 </html>

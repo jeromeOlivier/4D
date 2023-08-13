@@ -35,19 +35,44 @@
     <title>4 Development</title>
   </head>
   <body>
-    <div class="atelier-bkgnd">
+    <div class="atelier-background">
+      <header class="atelier-nav-background">
+        <div class="navbar">
+          <img class="logo" srcset="./assets/4D_logo@2x.png 2x, ./assets/4D_logo.png 1x"
+               src="./assets/4D_logo.png"
+               alt="logo 4 Development">
+          <div id="menu-toggle">
+            <div class="h1-nav-container">
+              <h1>Ateliers</h1>
+              <div id="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+              </div>
+              <nav class="nav-links">
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="propos.html">A propos</a></li>
+                  <li><a href="coaching.html">Coaching</a></li>
+                  <li><a href="mentoring.html">Mentoring</a></li>
+                  <li><a href="resilience.html">Résilience</a></li>
+                  <li><a href="ateliers.html">Ateliers</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
       <div class="contenu-general">
-        <header>
-          <!--                  <h1>Ateliers</h1>-->
-        </header>
         <main>
-          <h2 class="ateliers-titre">Pourquoi des ateliers</h2>
+          <h2 class="ateliers-title">Pourquoi des ateliers</h2>
           <p>En tant qu’ambassadeur de la créativité, je crois qu’il y a toujours une solution et que tout est possible.
             Les ressources existent en chacun de nous et au sein des équipes, il suffit de poser les bonnes questions et
             de faire émerger la force du groupe pour que les solutions se dessinent.</p>
           <p>En se reposant sur des valeurs communes, l’esprit d’équipe et la collaboration se renforcent, permettant au
             groupe d’aller plus loin, de résoudre des problèmes complexes et de faire jaillir des idées innovantes.</p>
-          <h2 class="ateliers-titre">A qui servent-ils</h2>
+          <h2 class="ateliers-title">A qui servent-ils</h2>
           <p>A travers des ateliers personnalisés et avec des outils éprouvés, je vous emmène à la découverte de vos
             forces et de celles des membres de vos équipes.</p>
           <p>Dessiner pour faire évoluer votre entreprise, ces workshop formateurs visent à modifier la posture
@@ -79,12 +104,10 @@
                    alt="instagram">
             </a>
           </div>
-          <p>&copy; <span id="year"></span> <a class="inline" href="mailto:david@4development.ch">David Furrer</a></p>
+          <p>&copy; <span id="year"></span> <a class="inline david" href="mailto:david@4development.ch">David Furrer</a></p>
         </footer>
       </div>
     </div>
+    <script src="./scripts.js" defer></script>
   </body>
-  <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear().toString();
-  </script>
 </html>
