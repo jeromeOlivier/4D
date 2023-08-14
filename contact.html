@@ -3,16 +3,13 @@
   <head>
     <!-- tags génériques -->
     <meta charset="UTF-8">
-    <meta http-equiv="default-style" content="default">
-    <meta http-equiv="content-language" content="fr-CH">
     <link rel="preload" href="./assets/Lato-Regular.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="./assets/Lato-Bold.woff" as="font" type="font/woff" crossorigin>
     <link rel="stylesheet" title="default" href="./styles.css">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="description" content="4 Development">
     <meta name="keywords"
-          content="coaching, mentoring, resilience, ateliers, développement, développement personnel, développement professionnel, développement d'équipe, développement d'entreprise, développement d'organisation, développement d'association, développement d'ecosystème, développement d'ecosysteme, développement d'ecosysteme humain, développement d'ecosystème humain, développement d'ecosysteme professionnel, développement d'ecosystème professionnel, développement d'ecosysteme personnel, développement d'ecosystème personnel, développement d'ecosysteme d'entreprise, développement d'ecosystème d'entreprise, développement d'ecosysteme d'organisation, développement d'ecosystème d'organisation, développement d'ecosysteme d'association, développement d'ecosystème d'association">
+          content="coaching, mentoring, resilience, ateliers, développement, développement personnel, développement professionnel, développement d'équipe, développement d'entreprise, développement d'organisation, développement d'association, développement d'écosystèmes">
     <meta name="author" content="David Furrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- tags média sociaux -->
@@ -34,82 +31,81 @@
     <meta name="twitter:domain" content="4development.ch"/>
     <title>4 Development</title>
   </head>
-  <body>
-    <div class="main-background">
-      <header class="main-nav-background">
-        <div class="navbar">
-          <img class="logo" srcset="./assets/4D_logo@2x.png 2x, ./assets/4D_logo.png 1x"
-               src="./assets/4D_logo.png"
-               alt="logo 4 Development">
-          <div id="menu-toggle">
-            <div class="h1-nav-container">
-              <h1>Contact</h1>
-              <div id="hamburger">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-              </div>
-              <nav class="nav-links">
-                <ul>
-                  <li><a href="index.html">Accueil</a></li>
-                  <li><a href="propos.html">A propos</a></li>
-                  <li><a href="coaching.html">Coaching</a></li>
-                  <li><a href="mentoring.html">Mentoring</a></li>
-                  <li><a href="resilience.html">Résilience</a></li>
-                  <li><a href="ateliers.html">Ateliers</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </nav>
+  <body id="main">
+    <header class="main-nav-background">
+      <div class="navbar">
+        <img class="logo" srcset="./assets/4D_logo@2x.png 2x, ./assets/4D_logo.png 1x"
+             src="./assets/4D_logo.png"
+             alt="logo 4 Development">
+        <div id="menu-toggle">
+          <div class="h1-nav-container">
+            <h1>Contact</h1>
+            <div id="hamburger">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
             </div>
+            <nav class="nav-links">
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="propos.html">A propos</a></li>
+                <li><a href="coaching.html">Coaching</a></li>
+                <li><a href="mentoring.html">Mentoring</a></li>
+                <li><a href="resilience.html">Résilience</a></li>
+                <li><a href="ateliers.html">Ateliers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </header>
-      <div class="contenu-general">
-        <main>
-          <h2 class="main-title">Faites votre prochain petit pas</h2>
-          <p>Avant de vous mettre en route, il convient de savoir où vous voulez aller.</p>
-          <p>Il en va de même pour votre évolution personnelle et professionnelle.</p>
-          <p>Contactez-moi pour une première rencontre gratuite afin de clarifier vos besoins et identifier l’approche
-            qui vous convient.</p>
-          <form action="" method="post">
-            <label for="nom">Nom</label>
-            <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
-            <label for="prenom">Prénom</label>
-            <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Votre email" required>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" placeholder="Votre message" rows="5" required></textarea>
-            <input type="submit" value="Envoyer" class="btn-principal">
-          </form>
-        </main>
-        <footer>
-          <div class="icon-row">
-            <a href="https://www.linkedin.com/company/4development-ch/" target="_blank" title="LinkedIn">
-              <img src="./assets/linkedin.png"
-                   srcset="./assets/linkedin@2x.png 2x"
-                   width="24"
-                   height="24"
-                   alt="linkedin">
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100090247600651" target="_blank" title="Facebook">
-              <img src="./assets/facebook.png"
-                   srcset="./assets/facebook@2x.png 2x"
-                   width="24"
-                   height="24"
-                   alt="facebook">
-            </a>
-            <a href="https://instagram.com/4d_fordevelopment?" target="_blank" title="Instagram">
-              <img src="./assets/instagram.png"
-                   srcset="./assets/instagram@2x.png 2x"
-                   width="24"
-                   height="24"
-                   alt="instagram">
-            </a>
-          </div>
-          <p>&copy; <span id="year"></span> <a class="inline david" href="mailto:david@4development.ch">David Furrer</a></p>
-        </footer>
       </div>
+    </header>
+    <div class="contenu-general">
+      <main>
+        <h2 class="main-title">Faites votre prochain petit pas</h2>
+        <p>Avant de vous mettre en route, il convient de savoir où vous voulez aller.</p>
+        <p>Il en va de même pour votre évolution personnelle et professionnelle.</p>
+        <p>Contactez-moi pour une première rencontre gratuite afin de clarifier vos besoins et identifier l’approche
+          qui vous convient.</p>
+        <form action="" method="post">
+          <label for="nom">Nom</label>
+          <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+          <label for="prenom">Prénom</label>
+          <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Votre email" required>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Votre message" rows="5" required></textarea>
+          <input type="submit" value="Envoyer" class="btn-principal">
+        </form>
+      </main>
+      <footer>
+        <div class="icon-row">
+          <a href="https://www.linkedin.com/company/4development-ch/" target="_blank" title="LinkedIn">
+            <img src="./assets/linkedin.png"
+                 srcset="./assets/linkedin@2x.png 2x"
+                 width="24"
+                 height="24"
+                 alt="linkedin">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100090247600651" target="_blank" title="Facebook">
+            <img src="./assets/facebook.png"
+                 srcset="./assets/facebook@2x.png 2x"
+                 width="24"
+                 height="24"
+                 alt="facebook">
+          </a>
+          <a href="https://instagram.com/4d_fordevelopment?" target="_blank" title="Instagram">
+            <img src="./assets/instagram.png"
+                 srcset="./assets/instagram@2x.png 2x"
+                 width="24"
+                 height="24"
+                 alt="instagram">
+          </a>
+        </div>
+        <p>&copy; <span id="year"></span> <a class="inline david" href="mailto:david@4development.ch">David Furrer</a>
+        </p>
+      </footer>
     </div>
     <script src="./scripts.js" defer></script>
   </body>

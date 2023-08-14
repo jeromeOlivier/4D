@@ -5,11 +5,6 @@
   font-display : swap;
 }
 
-/* @font-face { */
-/*   font-family  : "lato-gras"; */
-/*   src          : url("./assets/Lato-Bold.woff") format("woff"); */
-/*   font-display : swap; */
-/* } */
 /* couleurs */
 :root {
   --atelier                 : #4d4b00;
@@ -30,12 +25,10 @@
   --resilience-nav-gradient : linear-gradient(180deg, #F0CDCC 0%, #B57D7D 75%, #B57D7D00 100%);
 }
 
-/* couleurs des titres et fond d'écrans */
+/* colors for titles and backgrounds */
 .main-title { color : var(--main); }
 
-.main-nav-background {
-  background : var(--main-nav-gradient);
-}
+.main-nav-background { background : var(--main-nav-gradient); }
 
 .main-background { background : var(--main-gradient) no-repeat center; }
 
@@ -160,9 +153,9 @@ nav { will-change : transform; }
     border-radius    : 2px;
     display          : block;
     height           : 3px;
-    margin-top       : clamp(4px, calc(100vh / 64), 6px);
+    margin-top       : 6px;
     position         : inherit;
-    width            : clamp(24px, calc(100vw / 24), 32px);
+    width            : 28px;
   }
 
   .h1-nav-container {
@@ -198,7 +191,7 @@ nav { will-change : transform; }
     font-style      : normal;
     line-height     : 1rem;
     margin          : 0;
-    padding         : 0 0 0 1.5rem;
+    /* padding         : 0 0 0 2rem; */
     text-align      : center;
     text-decoration : none;
   }
@@ -209,7 +202,7 @@ nav { will-change : transform; }
 }
 
 /* navigation pour écrans de grande tailles */
-@media only screen and (min-width : 970px) {
+@media only screen and (min-width : 971px) {
   .h1-nav-container {
     align-items     : end;
     display         : flex;
@@ -335,10 +328,21 @@ header {
   z-index        : 1;
 }
 
-body {
-  margin  : 0;
-  padding : 0;
+body::before {
+  content    : "";
+  height     : 100%;
+  left       : 0;
+  position   : fixed;
+  top        : 0;
+  width      : 100%;
+  z-index    : -1;
 }
+
+body#main::before { background : var(--main-gradient) no-repeat center; }
+body#atelier::before { background : var(--atelier-gradient) no-repeat center; }
+body#coach::before { background : var(--coach-gradient) no-repeat center; }
+body#mentor::before { background : var(--mentor-gradient) no-repeat center; }
+body#resilience::before { background : var(--resilience-gradient) no-repeat center; }
 
 /* manipulation du contenu */
 main {
@@ -352,7 +356,7 @@ main {
   flex-direction     : column;
   height             : 100vh;
   justify-content    : space-between;
-  overflow           : scroll;
+  /* overflow           : scroll; */
   -ms-overflow-style : none; /* IE & Edge */
   padding-bottom     : env(safe-area-inset-bottom);
   padding-top        : 7rem;
@@ -430,6 +434,12 @@ main {
   transform : scale(1.1);
 }
 
+.additive {
+  mix-blend-mode: screen;
+  margin-top: 3rem;
+  rotate: -5deg;
+}
+
 /* pieds de page */
 footer {
   align-items     : center;
@@ -449,4 +459,3 @@ footer {
 }
 
 .icon-row > * { margin : 0 10px 1rem; }
-
