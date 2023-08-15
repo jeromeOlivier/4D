@@ -3,47 +3,48 @@
   <head>
     <!-- tags génériques -->
     <meta charset="UTF-8">
-    <link rel="preload" href="./assets/Lato-Regular.woff" as="font" type="font/woff" crossorigin>
-    <link rel="stylesheet" title="default" href="./styles.css">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="description" content="4 Development">
-    <meta name="keywords"
-          content="coaching, mentoring, resilience, ateliers, développement, développement personnel, développement professionnel, développement d'équipe, développement d'entreprise, développement d'organisation, développement d'association, développement d'écosystèmes">
-    <meta name="author" content="David Furrer">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- tags média sociaux -->
-    <meta property="og:title" content="4 Development"/>
-    <meta property="og:url" content="https://www.4development.ch/contact.html"/>
-    <meta property="og:image" content="https://www.4development.ch/images/social.png"/>
-    <meta property="og:description" content="Faites votre prochain petit pas"/>
-    <meta property="og:site_name" content="4 Development"/>
-    <meta property="og:locale" content="fr_CH"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:see_also" content="https://www.4development.ch/"/>
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:site" content="@4devch"/>
-    <meta name="twitter:creator" content="@4devch"/>
-    <meta name="twitter:title" content="4 Development"/>
-    <meta name="twitter:description" content="Faites votre prochain petit pas"/>
-    <meta name="twitter:image" content="https://www.4development.ch/images/social.png"/>
-    <meta name="twitter:url" content="https://www.4development.ch/contact.html"/>
-    <meta name="twitter:domain" content="4development.ch"/>
+    <link as="font" crossorigin href="./assets/Lato-Regular.woff" rel="preload" type="font/woff">
+    <link href="./styles.css" rel="stylesheet" title="default">
+    <meta content="index, follow" name="robots">
+    <meta content="index, follow" name="googlebot">
+    <meta content="Coach, mentor et formateur, je vous accompagne dans votre développement personnel ou votre chemin
+    professionnel. Compréhension de l’humain, compétences de manager, expérience d’entrepreneur." name="description">
+    <meta content="David, David Furrer, Coaching, Coaching de vie, Coaching d’équipe, Développement, Développement
+    personnel, Development, Mentoring, Conseil, Ethnorésilience, Résilience, Ateliers, Formation, development,
+    fordevelopment, Directions, Dimensions, Dynamiques, Démarches, Dreams, Devenir, Désirs" name="keywords">
+    <meta content="David Furrer" name="author">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- tags média sociaux open graph -->
+    <meta content="4D" property="og:title"/>
+    <meta content="https://www.4development.ch/contact.html" property="og:url"/>
+    <meta content="https://www.4development.ch/assets/4D_social_main.jpg" property="og:image"/>
+    <meta content="Faites votre prochain petit pas" property="og:description"/>
+    <meta content="4 Development" property="og:site_name"/>
+    <meta content="fr_CH" property="og:locale"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://www.4development.ch/" property="og:see_also"/>
+    <!-- tags média sociaux twitter -->
+    <meta content="summary_large_image" name="twitter:card"/>
+    <meta content="4D" name="twitter:title"/>
+    <meta content="Faites votre prochain petit pas" name="twitter:description"/>
+    <meta content="https://www.4development.ch/assets/4D_social_main.jpg" name="twitter:image"/>
+    <meta content="https://www.4development.ch/contact.html" name="twitter:url"/>
     <title>4 Development</title>
   </head>
   <body id="main">
     <header class="main-nav-background">
       <div class="navbar">
-        <img class="logo" srcset="./assets/4D_logo@2x.png 2x, ./assets/4D_logo.png 1x"
+        <img alt="logo 4 Development" class="logo"
+             onclick="location.href = 'index.html'"
              src="./assets/4D_logo.png"
-             alt="logo 4 Development">
+             srcset="./assets/4D_logo@2x.png 2x, ./assets/4D_logo.png 1x">
         <div id="menu-toggle">
           <div class="h1-nav-container">
             <h1>Contact</h1>
             <div id="hamburger">
-              <span class="hamburger-line"></span>
-              <span class="hamburger-line"></span>
-              <span class="hamburger-line"></span>
+              <div></div>
+              <div></div>
+              <div></div>
             </div>
             <nav class="nav-links">
               <ul>
@@ -67,46 +68,41 @@
         <p>Il en va de même pour votre évolution personnelle et professionnelle.</p>
         <p>Contactez-moi pour une première rencontre gratuite afin de clarifier vos besoins et identifier l’approche
           qui vous convient.</p>
-        <form action="" method="post">
-          <label for="nom">Nom</label>
-          <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
-          <label for="prenom">Prénom</label>
-          <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Votre email" required>
-          <label for="message">Message</label>
-          <textarea name="message" id="message" placeholder="Votre message" rows="5" required></textarea>
-          <input type="submit" value="Envoyer" class="btn-principal">
-        </form>
+        <div class="contact">
+          <p>David Furrer</p>
+          <p>+41 79 278 35 03</p>
+          <a href="mailto:david@4development.ch">david@4development.ch</a>
+        </div>
       </main>
       <footer>
         <div class="icon-row">
           <a href="https://www.linkedin.com/company/4development-ch/" target="_blank" title="LinkedIn">
-            <img src="./assets/linkedin.png"
-                 srcset="./assets/linkedin@2x.png 2x"
-                 width="24"
+            <img alt="linkedin"
                  height="24"
-                 alt="linkedin">
+                 src="./assets/linkedin.png"
+                 srcset="./assets/linkedin@2x.png 2x"
+                 width="24">
           </a>
           <a href="https://www.facebook.com/profile.php?id=100090247600651" target="_blank" title="Facebook">
-            <img src="./assets/facebook.png"
-                 srcset="./assets/facebook@2x.png 2x"
-                 width="24"
+            <img alt="facebook"
                  height="24"
-                 alt="facebook">
+                 src="./assets/facebook.png"
+                 srcset="./assets/facebook@2x.png 2x"
+                 width="24">
           </a>
           <a href="https://instagram.com/4d_fordevelopment?" target="_blank" title="Instagram">
-            <img src="./assets/instagram.png"
-                 srcset="./assets/instagram@2x.png 2x"
-                 width="24"
+            <img alt="instagram"
                  height="24"
-                 alt="instagram">
+                 src="./assets/instagram.png"
+                 srcset="./assets/instagram@2x.png 2x"
+                 width="24">
           </a>
         </div>
-        <p>&copy; <span id="year"></span> <a class="inline david" href="mailto:david@4development.ch">David Furrer</a>
+        <p>&copy; <span id="year"></span>&nbsp;&nbsp;&nbsp;<a class="inline david" href="mailto:david@4development.ch">David
+          Furrer</a>
         </p>
       </footer>
     </div>
-    <script src="./scripts.js" defer></script>
+    <script defer src="./scripts.js"></script>
   </body>
 </html>

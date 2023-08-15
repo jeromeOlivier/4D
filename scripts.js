@@ -20,7 +20,10 @@ hamburger.addEventListener('click', function() {
   } else {
     menu.classList.add('slide-in');
   }
+  hamburger.classList.toggle('close');
 });
+
+
 
 // resize events
 window.addEventListener('resize', function() {
