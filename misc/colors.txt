@@ -1,0 +1,7 @@
+Colors:
+
+Aterlier: #A3A275
+Coach: #DEAF55
+Main: #FB9C28
+Mentor: #6B96AF
+Resilience: #B57D7D
