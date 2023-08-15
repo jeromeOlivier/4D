@@ -144,41 +144,41 @@ nav { will-change : transform; }
 /* for mobile */
 @media only screen and (max-width : 970px) {
   #hamburger {
-    cursor   : pointer;
-    height: 28px;
-    z-index  : 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: all 0.3s ease;
+    cursor          : pointer;
+    display         : flex;
+    flex-direction  : column;
+    height          : 28px;
+    justify-content : space-between;
+    transition      : all 0.3s ease;
+    z-index         : 4;
   }
 
   #hamburger > div {
     background-color : var(--blanc);
     border-radius    : 2px;
     height           : 3px;
-    width: 28px;
-    transition: all 0.3s ease;
+    transition       : all 0.3s ease;
+    width            : 28px;
   }
 
   #hamburger.close div:nth-child(1) {
-    transform: rotate(90deg) translate(14px, 0);
-    width: 36px;
+    transform : rotate(90deg) translate(14px, 0);
+    width     : 36px;
   }
 
   #hamburger.close div:nth-child(2) {
-    opacity: 0;
-    transform: rotate(-90deg);
-    width: 36px;
+    opacity   : 0;
+    transform : rotate(-90deg);
+    width     : 36px;
   }
 
   #hamburger.close div:nth-child(3) {
-    transform: translate(0, -11px);
-    width: 36px;
+    transform : translate(0, -11px);
+    width     : 36px;
   }
 
   #hamburger.close {
-    transform: rotate(-225deg);
+    transform : rotate(-225deg);
   }
 
   .h1-nav-container {
@@ -263,8 +263,8 @@ nav { will-change : transform; }
   }
 
   .nav-links {
-    width: 100%;
-    padding-left: 2rem;
+    padding-left : 2rem;
+    width        : 100%;
   }
 
   nav > ul > li > a {
@@ -315,8 +315,15 @@ input[type=checkbox] { display : none; }
 .btn-principal:hover { background : var(--blanc); color : var(--main) }
 
 /* contact */
-.contact { margin-bottom: .5rem; }
-.coordinates { line-height: 1.5rem; margin: 0; padding: 0; font-size: 1rem;}
+.contact { margin-bottom : .5rem; }
+
+.coordinates { font-size : 1rem; line-height : 1.5rem; margin : 0; padding : 0; }
+
+a[href^="tel"],
+a[href^="mailto"] {
+  color           : var(--blanc); /* Inherit from parent */
+  text-decoration : none; /* Remove default underline */
+}
 
 /* mise en page */
 /* réinitialisation */
